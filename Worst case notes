@@ -1,0 +1,5 @@
+Worst Case: Why can't the Bellman-Ford shortest path algorithm be used to find the longest path by negating the edges of the graph?
+Answer: Assuming all edges have a positive weight, Bellmen-Ford can't be used (unless the graph is acyclic) because it would be caught in a negative weight 
+        cycle when it tries to relax all tense edges. This loop is caused because whenever it relaxes a tense edge it reduces the total distance to a given 
+        vertex which causes the edges going to other vertexesto become tense. This continues on as each reduced edge in the cycle gets relaxed and causes 
+        the effect stated ealier. 
