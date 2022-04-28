@@ -1,2 +1,39 @@
 My problem: Given a directed, weighted graph, what is the longest path within it.
 Approximation: color-coded approximation
+
+    # default dictionary to store graph
+    graph = dict(list)
+ 
+    # function to add an edge to graph
+    def addEdge(u, v, weight):
+        graph[u].append((v, weight))
+ 
+    # A function used by DFS
+    def DFSUtil(v, visited):
+ 
+        # Mark the current node as visited
+        # and print it
+        visited.add(v)
+        print(v, end=' ')
+        
+        newList = list()
+        
+        # Recur for all the vertices
+        # adjacent to this vertex
+        for neighbour in graph[v]:
+            if neighbour not in visited:
+                newList.append(neighbor)
+        newList.sort(graph[v](1))
+        if 
+        DFSUtil(neighbour, visited)
+ 
+    # The function to do DFS traversal. It uses
+    # recursive DFSUtil()
+    def DFS(v):
+ 
+        # Create a set to store visited vertices
+        visited = set()
+ 
+        # Call the recursive helper function
+        # to print DFS traversal
+        DFSUtil(v, visited)
