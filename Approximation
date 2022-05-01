@@ -22,7 +22,7 @@ Approximation: color-coded approximation
         # adjacent to this vertex
         for neighbour in graph[v]:
             if neighbour not in visited:
-                newList.append(neighbor)
+                newList.append(neighbour)
         newList.sort(graph[v](1))
         if 
         DFSUtil(neighbour, visited)
