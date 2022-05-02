@@ -1,0 +1,17 @@
+15
+20
+1 A B
+5 B C
+6 H P
+7 P A
+10 G H
+2 Z G
+4 A Z
+6 Z C
+8 P B
+1 B R
+2 R C
+4 Z R
+3 R A
+9 C G
+1 G A
