@@ -27,8 +27,5 @@ def main():
             set.add(x)
 
         
-
-
-
 if __name__ == "__main__":
     main()
