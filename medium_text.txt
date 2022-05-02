@@ -15,3 +15,8 @@
 3 R A
 9 C G
 1 G A
+2 Z X
+3 X B
+7 X G
+6 Z Y
+2 Y C

@@ -11,10 +11,10 @@ def findLongestPath(edge_dict, node_set, num_nodes):
             path_weight = 0
             for j in range(len(path) - 1):
                 if path_exists:
-                    if not edge_dict.has_key(([path[j], path[j+1]])):
+                    if (path[j], path[j+1]) not in edge_dict:
                         path_exists = False
                     else:
-                        path_weight += edge_dict[([path[j], path[j+1]])]
+                        path_weight += int(edge_dict[(path[j], path[j+1])])
             if path_exists:
                 if longest_path_weight < path_weight:
                     longest_path_weight = path_weight
@@ -24,13 +24,13 @@ def findLongestPath(edge_dict, node_set, num_nodes):
     return longest_path
     
 def main():
-    num_nodes = int(input)
-    num_edges = int(input)
+    num_nodes = int(input())
+    num_edges = int(input())
     edges = dict()
     nodes = set()
     for i in range(num_edges):
-        string = str(input).split()
-        edges[(string[1], string[2])] = string[3]
+        string = str(input()).split()
+        edges[(string[1], string[2])] = string[0]
         nodes.add(string[1])
         nodes.add(string[2])
     print(findLongestPath(edges, nodes, num_nodes))
