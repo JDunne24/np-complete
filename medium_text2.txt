@@ -1,0 +1,22 @@
+16
+20
+2 A B
+3 A C
+7 A D
+8 A E
+1 A F
+5 A G
+7 A H
+9 A I
+10 A J
+3 A K
+5 A L
+11 A M
+12 A N
+18 A O
+2 A P
+3 B C
+5 B A
+8 B D
+10 B E
+1 B F
