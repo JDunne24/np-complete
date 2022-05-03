@@ -29,7 +29,7 @@ class TestLongestPath(unittest.TestCase):
 8 C A"""
         cls.t1_exp = """['A', 'B', 'C', 'D']"""
 
-        cls.t2_in ="""15
+        cls.t2_in ="""12
 20
 1 A B
 5 B C
@@ -50,7 +50,7 @@ class TestLongestPath(unittest.TestCase):
 3 X B
 7 X G
 6 Z Y
-2 Y C""" 
+2 Y J""" 
         cls.t2_exp ="""['X', 'B', 'C', 'G', 'H', 'P', 'A', 'Z', 'Y', 'J']""" 
 
         cls.t3_in ="""26
